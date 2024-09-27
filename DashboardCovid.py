@@ -32,7 +32,7 @@ def api_to_dataframe(url,key,part,param):
 	#maakt url om request mee uit te voren
 	web = url+part
 	#vult de header en key in
-	headers = {"x-rapidapi-key": key,"x-rapidapi-host": url}
+	headers = {"x-rapidapi-key": key,"x-rapidapi-host": "covid-193.p.rapidapi.com"}
 	#maakt de reuest met parameters
 	response = requests.get(web, headers=headers, params=param).json()
 	#zet de respons om tot een dataframe
