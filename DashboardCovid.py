@@ -32,8 +32,7 @@ def api_to_dataframe(url,key,part,param):
 	#maakt url om request mee uit te voren
 	web = 'https://'+url+'/'+part
 	#vult de header en key in
-	headers = {"x-rapidapi-key": key,
-			   "x-rapidapi-host": url}
+	headers = {"x-rapidapi-key": key,"x-rapidapi-host": url}
 	#maakt de reuest met parameters
 	response = requests.get(web, headers=headers, params=param).json()
 	#zet de respons om tot een dataframe
@@ -189,7 +188,7 @@ elif pagina == "Statistieken":
                 
                 # Correlatie heatmap
                 part = 'statistics'
-                corona = api_to_dataframe(api_url, api_key, part='statistics', param=None)
+                corona = api_to_dataframe(url = api_url,key = api_key, part='statistics', param=None)
                 corona = corona_df_unpacker(corona, ['cases', 'deaths', 'tests'])
                 corona = corona[corona['country'].isin(gdp_health['Country Name'])]
                 gdp_health = gdp_health[gdp_health['Country Name'].isin(corona['country'])].rename(columns={'Country Name':'country'})
