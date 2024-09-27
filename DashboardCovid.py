@@ -64,7 +64,7 @@ pagina = st.sidebar.selectbox("Selecteer een pagina", ["Home","Dagelijkse Nieuwe
     #local_image_path = r'C:\Users\semvr\OneDrive - HvA\Werktuigbouwkunde\leerjaar 3\Minor Data Science\Periode 1\code streamlit\Corona.afbeelding.png'  # Replace with your local image path
     #st.image(local_image_path, caption="Don't die, get vaccinated!", use_column_width=True,)
 
-    #st.write("De uiteenlopende sterftecijfers tussen landen tijdens de COVID-19-pandemie benadrukken de complexe wisselwerking tussen gezondheidszorgsystemen, overheidsacties, demografische factoren en sociaal gedrag. Daarom zal er gekeken worden naar wat voor invloed deze factoren hebben op het aantal mensen dat stierf")
+    st.write("De uiteenlopende sterftecijfers tussen landen tijdens de COVID-19-pandemie benadrukken de complexe wisselwerking tussen gezondheidszorgsystemen, overheidsacties, demografische factoren en sociaal gedrag. Daarom zal er gekeken worden naar wat voor invloed deze factoren hebben op het aantal mensen dat stierf")
 
 ### Pagina 1: Trendlijn Dagelijkse Nieuwe Gevallen (Nu Pagina 1)
 if pagina == "Dagelijkse Nieuwe Gevallen":
