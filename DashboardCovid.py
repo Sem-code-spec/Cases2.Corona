@@ -30,7 +30,7 @@ def get_data(endpoint, params=None):
 
 def api_to_dataframe(url,key,part,param):
 	#maakt url om request mee uit te voren
-	web = 'https://'+url+'/'+part
+	web = url+'/'+part
 	#vult de header en key in
 	headers = {"x-rapidapi-key": key,"x-rapidapi-host": url}
 	#maakt de reuest met parameters
