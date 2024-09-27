@@ -56,7 +56,7 @@ st.set_page_config(page_title="COVID-19 Dashboard", layout="wide")  # Full-scree
 st.title("COVID-19 Dashboard")
 
 # Sidebar navigatie voor meerdere pagina's
-pagina = st.sidebar.selectbox("Selecteer een pagina", ["Home","Dagelijkse Nieuwe Gevallen", "Statistieken", "Kaartweergave"])
+pagina = st.sidebar.selectbox("Selecteer een pagina", ["Dagelijkse Nieuwe Gevallen", "Statistieken", "Kaartweergave"])
 
 #if pagina == "Home":
 
